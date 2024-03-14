@@ -38,10 +38,11 @@
                     </ul>
                 </div>
                 <!-- login register -->
-                <div class="hidden md:flex gap-2">
-                    <a href="" class="py-3 px-8 bg-putihAbu text-ungu font-semibold rounded-full border hover:bg-transparent hover:border-ungu hover:text-ungu capitalize transition-all duration-500">Login</a>
-
-                    <a href="" class="py-3 px-8 bg-ungu text-white font-semibold rounded-full border hover:bg-transparent hover:border-ungu hover:text-ungu capitalize transition-all duration-500">Register</a>
+                <div class="hidden md:flex gap-3 items-center">
+                    <p class="font-medium text-slate-800">Syahrul saleh</p>
+                    <div class="w-[45px] h-[45px] rounded-full overflow-hidden">
+                        <img src="../public/orng.jpg" alt="" class="w-full h-full object-cover">
+                    </div>
                 </div>
 
                 <!-- mobile menu -->
@@ -73,10 +74,10 @@
     </header>
 
 
-    <main>
-        <div class="container mx-auto px-4 my-12">
-            <div class=" capitalize text-sm font-medium text-putihAbu2">
-                <span>Home  / <a href="">Details Paket 2</a></span>
+    <main class="bg-slate-100 pb-12">
+        <div class="container mx-auto px-4 py-12">
+            <div class=" capitalize text-sm  text-slate-400">
+                <span><a href="./index.html" class="font-medium text-putihAbu2">Home</a>  / <a href="" class="font-medium text-ungu">Daftar</a></span>
             </div>
         </div>
 
@@ -91,33 +92,43 @@
                     <p class="max-w-sm text-center md:text-left text-slate-500 text-sm md:text-base">Lokasi gedung berada di Larantuka,Kab. Flores Timur, Provinsi NTT.</p>
                 </div>
                 <!-- kanan -->
-                <div class="w-full md:w-1/2 md:pl-20 capitalize">
-                    <h3 class="font-bold text-lg md:text-xl mb-2">Detail Fasilitas Paket 2</h3>
-                    <p class="text-slate-500 text-sm md:text-base mb-8">paket 2 pilih salah satu fasilitas yang ada Di Bawah </p>
+                <div class="w-full md:w-1/2 md:ml-4 capitalize bg-white py-6 px-2 md:px-8 rounded-2xl shadow-lg shadow-slate-200/50">
+                    <h3 class="font-bold text-lg md:text-xl mb-2">Form formulir</h3>
+                    <p class="text-slate-500 text-sm md:text-base mb-8">Silahkan Isi formulir di bawah ini mohon di isi semua data nya</p>
 
                     <form action="" method="post">
-                        <div class="mb-12 flex flex-col ">
-                            <label for="" class="text-sm mb-2 ">Pilih Fasilitas</label>
-                            <div class="relative">
-                                <select name="" id="" class="w-full block appearance-none border border-slate-400 outline-none py-2 px-2 rounded-md">
-                                <option >Pilih Fasilitas</option>
-                                <option value="">Dekorasi</option>
-                                <option value="">sound sistem</option>
-                                <option value="">chatering</option>
-                                <option value="">Tenda Tambahan</option>
-                                <option value="">Snack</option>
-                                </select>
-                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                                </div>
+                        <div class="mb-5 flex flex-col ">
+                            <label for="" class="text-sm mb-2 after:content-['*'] after:ml-1 after:text-red-500">Nama Pemesan</label>
+                            <input type="text" name="" id="" class="py-2 px-2 outline-none border border-slate-400 rounded-md focus:border-ungu focus:ring-1 focus:ring-ungu" required placeholder="Masukkan Nama Pemesan">
+                        </div>
+                        <div class="mb-5 flex flex-col ">
+                            <label for="" class="text-sm mb-2 after:content-['*'] after:ml-1 after:text-red-500">Nama pemakai</label>
+                            <input type="text" name="" id="" class="py-2 px-2 outline-none border border-slate-400 rounded-md focus:border-ungu focus:ring-1 focus:ring-ungu" required placeholder="Masukkan Nama Pemakai">
+                        </div>
+                        <div class="mb-5 grid grid-cols-2 gap-3">
+                            <div class="flex flex-col ">
+                                <label for="" class="text-sm mb-2 after:content-['*'] after:ml-1 after:text-red-500">Nik</label>
+                                <input type="text" name="" id="" class="py-2 px-2 outline-none border border-slate-400 rounded-md focus:border-ungu focus:ring-1 focus:ring-ungu" required placeholder="Masukkan Nik">
                             </div>
+                            <div class="flex flex-col ">
+                                <label for="" class="text-sm mb-2 after:content-['*'] after:ml-1 after:text-red-500">no tlp / wa</label>
+                                <input type="text" name="" id="" class="py-2 px-2 outline-none border border-slate-400 rounded-md focus:border-ungu focus:ring-1 focus:ring-ungu" required placeholder="Masukkan Tlp / Wa">
+                            </div>
+                        </div>
+                        <div class="mb-5 flex flex-col ">
+                            <label for="" class="text-sm mb-2 after:content-['*'] after:ml-1 after:text-red-500">Alamat</label>
+                            <input type="text" name="" id="" class="py-2 px-2 outline-none border border-slate-400 rounded-md focus:border-ungu focus:ring-1 focus:ring-ungu" required placeholder="Masukkan Nama Alamat">
+                        </div>
+                        <div class="mb-8 flex flex-col ">
+                            <label for="" class="text-sm mb-2 after:content-['*'] after:ml-1 after:text-red-500">tanggal pemesanan</label>
+                            <input type="date" name="" id="" class="py-2 px-2 outline-none border border-slate-400 rounded-md focus:border-ungu focus:ring-1 focus:ring-ungu" required>
                         </div>
 
                     </form>
 
-                    <a href="" class="py-3 bg-ungu text-white rounded-full w-full block text-center capitalize mb-4 font-semibold border hover:border-ungu hover:bg-white hover:text-ungu transition-all duration-500
-                    ">Mendaftar <i class="fa-solid fa-caret-right"></i></a>
-                    <p class="capitalize text-sm text-slate-500 text-center">Silahkan klik daftar jika ingin memilih paket ini</p>
+                    <a href="../src/success1.html" class="py-3 bg-ungu text-white rounded-full w-full block text-center capitalize mb-4 font-semibold border hover:border-ungu hover:bg-white hover:text-ungu transition-all duration-500
+                    ">kirim data pesanan <i class="fa-solid fa-caret-right"></i></a>
+                    <p class="capitalize text-sm text-slate-500 text-center">Klik tombol kiri data pesanan untuk melanjutkan</p>
                 </div>
             </div>
         </div>
