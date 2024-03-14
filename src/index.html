@@ -18,10 +18,316 @@
 
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+<body class="font-primary tracking-wider text-biru">
+
+    <!-- navbar -->
+    <header class="w-full py-6 ">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center ">
+                <!-- logo -->
+                <div class="">
+                    <img src="../public/logo2.svg" alt="" class="w-[140px] md:w-[170px]">
+                </div>
+                <!-- navbar -->
+                <div class="hidden md:block ">
+                    <ul class="flex gap-6 items-center capitalize ">
+                        <li><a href="" class="font-semibold text-ungu hover:text-ungu text-base transition-all duration-500">beranda</a></li>
+                        <li><a href="" class="text-biru hover:text-ungu text-base transition-all duration-500">Tentang  Kami</a></li>
+                        <li><a href="" class="text-biru hover:text-ungu text-base transition-all duration-500">Paket</a></li>
+                        <li><a href="" class="text-biru hover:text-ungu text-base transition-all duration-500">hubingi kami</a></li>
+                    </ul>
+                </div>
+                <!-- login register -->
+                <div class="hidden md:flex gap-2">
+                    <a href="" class="py-3 px-8 bg-putihAbu text-ungu font-semibold rounded-full border hover:bg-transparent hover:border-ungu hover:text-ungu capitalize transition-all duration-500">Login</a>
+
+                    <a href="" class="py-3 px-8 bg-ungu text-white font-semibold rounded-full border hover:bg-transparent hover:border-ungu hover:text-ungu capitalize transition-all duration-500">Register</a>
+                </div>
+
+                <!-- mobile menu -->
+                <div id="navbar" class="hidden absolute h-[100vh] inset-0 py-20 bg-white z-50">
+                    <ul class="flex flex-col gap-4 items-center capitalize justify-center">
+                        <!-- logo -->
+                        <div class="mb-8">
+                            <img src="../public/logo2.svg" alt="" class="w-[140px] md:w-[170px]">
+                        </div>
+                        <!-- navbar -->
+                        <li><a href="" class="font-semibold text-ungu hover:text-ungu text-base transition-all duration-500">beranda</a></li>
+                        <li><a href="" class="text-biru hover:text-ungu text-base transition-all duration-500">Tentang  Kami</a></li>
+                        <li><a href="" class="text-biru hover:text-ungu text-base transition-all duration-500">Paket</a></li>
+                        <li><a href="" class="text-biru hover:text-ungu text-base transition-all duration-500">hubingi kami</a></li>
+
+                        <!-- login -->
+                        <div class="flex flex-col gap-2 text-center mt-12">
+                            <a href="" class="py-3 px-20 bg-putihAbu text-ungu font-semibold rounded-full border hover:bg-transparent hover:border-ungu hover:text-ungu capitalize transition-all duration-500">Login</a>
+                            <a href="" class="py-3 px-20 bg-ungu text-white font-semibold rounded-full border hover:bg-transparent hover:border-ungu hover:text-ungu capitalize transition-all duration-500">Register</a>
+                        </div>
+                    </ul>
+                </div>
+                <!-- burger menu -->
+                <div id="menuBurger" class="md:hidden cursor-pointer z-50 transition-all duration-300 ">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- hero -->
+        <header class="w-full pb-20 pt-10 md:pt-16">
+            <div class="container mx-auto px-4">
+                <div class="w-full md:flex justify-between">
+
+                    <!-- kiri -->
+                    <div class="w-full md:w-1/2  flex justify-end items-center relative md:order-2 mb-12 md:mb-0">
+                        <!-- img -->
+                        <div class="w-[400px] h-[300px] md:h-[420px] overflow-hidden rounded-tr-[80px] rounded-bl-[80px] ">
+                            <img src="../public/img/hero.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- card bawah-->
+                        <div class="absolute bg-white w-[160px] px-5 py-3 rounded-lg left-3 bottom-9 z-0">
+                            <div class="flex gap-2 items-center mb-2">
+                                <i class="fa-solid fa-circle-check text-hijau"></i>
+                                <p class="text-sm font-semibold">Up to Date</p>
+                            </div>
+                            <p class="text-xs text-abu2">Fasilitas yang lengkap dan mudah di dapat</p>
+                        </div>
+
+                        <!-- card atas -->
+                        <div class="hidden w-[130px] h-[105px] bg-white py-2 px-3 rounded-md shadow-lg md:flex flex-col items-start justify-center absolute z-0 top-5 right-10 capitalize">
+                            <div class="flex gap-4 mb-2">
+                                <i class="fa-solid fa-chart-simple text-ungu"></i>
+                                <p class="font-semibold text-xs ml-[2px]">place</p>
+                            </div>
+                            <div class="flex gap-4 mb-2">
+                                <i class="fa-solid fa-camera text-ungu"></i>
+                                <p class="font-semibold text-xs">photo</p>
+                            </div>
+                            <div class="flex gap-4">
+                                <i class="fa-solid fa-location-crosshairs text-ungu"></i>
+                                <p class="font-semibold text-xs">Location</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kanan -->
+                    <div class="w-full md:w-1/2 md:order-1">
+                        <div class="flex gap-2 items-center mb-4">
+                            <i class="fa-solid fa-tree-city text-ungu"></i>
+                            <p class="text-xs md:text-sm italic font-semibold">Sewa Gedung Serbaguna Larantuka</p>
+                        </div>
+                        <h1 class="font-bold text-2xl md:text-4xl leading-relaxed mb-6">Gedung Multi <span class="text-ungu">Hall Event Larantuka</span> untuk layanan sewa gedung</h1>
+
+                        <p class="leading-relaxed text-sm text-abu2 mb-12">Gedung serbaguna Multi Hall Event Larantuka tempat mengadakan berbagai kegiatan seperti pertemuan, pesta pernikahan Dll. Gedung serbaguna Multi Hall EventLarantuka ini mampu menampung  kuranglebih 500 orang.</p>
+
+                        <div class="flex flex-col md:flex-row gap-2 ">
+
+                            <a href="" class="py-[14px] px-8 bg-ungu text-white font-semibold rounded-full border hover:bg-transparent hover:border-ungu hover:text-ungu capitalize transition-all duration-500 flex items-center justify-center md:justify-start gap-2">Pesan Sekarang <i class="fa-solid fa-caret-right"></i></a>
+
+                            <a href="" class="py-[14px] px-8 bg-putihAbu text-ungu font-semibold rounded-full border hover:bg-transparent hover:border-ungu hover:text-ungu capitalize transition-all duration-500 flex items-center justify-center md:justify-start gap-2">Lihat Paket <i class="fa-solid fa-caret-right"></i></a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
+
+    <main>
+        <!-- content 1 -->
+        <header class=" w-full py-20 relative">
+            <!-- titik -->
+            <div class="absolute bottom-4 left-10">
+                <img width="180" src="../public/titik.svg" alt="">
+            </div>
+
+            <div class="container mx-auto px-4">
+                <div class="w-full flex justify-between">
+                    <!-- kiri -->
+                    <div id="keduaKiri" class="w-full md:w-1/2 relative  hidden md:block">
+                        <!-- img 1 -->
+                        <div class="w-[350px] h-[300px] overflow-hidden border-[5px] border-white rounded-lg absolute ">
+                            <img src="../public/img/bg1.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <!-- img 2 -->
+                        <div class="w-[350px] h-[300px] overflow-hidden border-[5px] border-white rounded-lg shadow-lg absolute top-32 right-5">
+                            <img src="../public/img/bg2.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <!-- kanan -->
+                    <div id="keduaKanan" class="w-full md:w-1/2  md:pl-10">
+                        <p class="font-semibold text-hijau mb-2 capitalize">Tentang Gedung</p>
+                        <h2 class="font-bold capitalize text-xl md:text-3xl text-hitam mb-12">Gedung Serbagun <span class="text-ungu">Multi Hall Event</span> larantuka
+                        </h2>
+                        <!-- text 1 -->
+                        <div class="text-hitam mb-4">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h1 class="text-xl font-normal capitalize">01.</h1>
+                                <h1 class="text-xl font-semibold capitalize">lokasi gedung</h1>
+                            </div>
+                            <p class="font-light capitalize text-hitam2  ml-12">Lokasi gedung berada di Larantuka,Kab. Flores Timur, Provinsi NTT.</p>
+                        </div>
+
+                        <!-- text 2 -->
+                        <div class="text-hitam mb-4">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h1 class="text-xl font-normal capitalize">02.</h1>
+                                <h1 class="text-xl font-semibold capitalize">fasilitas terlengkap</h1>
+                            </div>
+                            <p class="font-light capitalize text-hitam2  ml-12">fasilitas yang terdapat dalamnya berupa paket dekorasi, sound sistem dan juga chatering serta letak gedung yang strategis.</p>
+                        </div>
+
+                        <!-- text 3 -->
+                        <div class="text-hitam mb-4">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h1 class="text-xl font-normal capitalize">03.</h1>
+                                <h1 class="text-xl font-semibold capitalize">kapasitas gedung</h1>
+                            </div>
+                            <p class="font-light capitalize text-hitam2  ml-12">kapasitas gedung bisa menampung kurang lebih dari 500 orang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
+
+    <main>
+        <header class="w-full h-[600px] bg-ungu py-20 relative mb-[1200px] md:mb-[200px]">
+            <div class="px-4 md:px-16 ">
+                <div class="w-full  md:flex justify-between items-center">
+                    <!-- kiri -->
+                    <div class="w-full md:w-[40%] text-white capitalize  md:mt-20 mb-12 md:mb-0 ">
+                        <h2 class="text-center md:text-left font-bold text-xl md:text-3xl mb-8 max-w-md">Paket Gedung <span class="text-hijau">Multi Hall Event</span> Larantuka</h2>
+                        <p class="text-center md:text-left text-sm max-w-sm mb-16 leading-[30px] text-ungu2">terdapat dua paket yang berbeda yaitu paket 1 dan paket 2 silihkan pilih berdasarkan kebutuhan kegiatan atau acara kamu</p>
+
+                    </div>
+                    <!-- kanan -->
+                    <div class="w-full md:w-[60%] md:flex ">
+                        <!-- card 1 -->
+                        <div class="w-full md:absolute md:top-10  md:w-[310px] bg-white rounded-[50px] px-6 py-8 shadow-xl mb-12 md:mb-0">
+                            <h2 class="font-semibold capitalize text-center text-hijau mb-3">Paket 1</h2>
+
+                            <h1 class="text-center mb-5 capitalize font-bold text-xl md:text-3xl">Rp. 2.000.000</h1>
+
+                            <p class="font-normal text-center capitalize text-putihAbu2 text-sm md:text-base max-w-60 mx-auto mb-8">paket 1 full fasilitas semua fasilitas tersedia</p>
+
+                            <div class="mb-12">
+                                <div class="flex gap-4 items-center border-b border-putihAbu py-3 mb-3">
+                                    <i class="fa-solid fa-circle-check text-hijau text-[20px]"></i>
+                                    <p class="font-medium capitalize">dekorasi</p>
+                                </div>
+                                <div class="flex gap-4 items-center border-b border-putihAbu py-3 mb-3">
+                                    <i class="fa-solid fa-circle-check text-hijau text-[20px]"></i>
+                                    <p class="font-medium capitalize">sound sistem</p>
+                                </div>
+                                <div class="flex gap-4 items-center border-b border-putihAbu py-3 mb-3">
+                                    <i class="fa-solid fa-circle-check text-hijau text-[20px]"></i>
+                                    <p class="font-medium capitalize">chatering</p>
+                                </div>
+                                <div class="flex gap-4 items-center border-b border-putihAbu py-3 mb-3">
+                                    <i class="fa-solid fa-circle-check text-hijau text-[20px]"></i>
+                                    <p class="font-medium capitalize">Tenda Tambahan</p>
+                                </div>
+                                <div class="flex gap-4 items-center border-b border-putihAbu py-3">
+                                    <i class="fa-solid fa-circle-check text-hijau text-[20px]"></i>
+                                    <p class="font-medium capitalize">Snack</p>
+                                </div>
+                            </div>
+
+                            <a href="" class="py-3 bg-ungu text-white rounded-full w-full block text-center capitalize mb-4 font-semibold border hover:border-ungu hover:bg-white hover:text-ungu transition-all duration-500
+                            ">Pesan Paket 1</a>
+
+                        </div>
+
+                        <!-- card 2 -->
+                        <div class="w-full md:absolute md:top-10 right-24  md:w-[310px] bg-white rounded-[50px] px-6 py-8 shadow-xl mb-12 md:mb-0">
+                            <h2 class="font-semibold capitalize text-center text-hijau mb-3">Paket 2</h2>
+
+                            <h1 class="text-center mb-5 capitalize font-bold text-xl md:text-3xl">Rp. 1.000.000</h1>
+
+                            <p class="font-normal text-center capitalize text-putihAbu2 text-sm md:text-base max-w-60 mx-auto mb-8">paket 2 pilih salah satu fasilitas yang ada</p>
+
+                            <div class="mb-12">
+                                <div class="flex gap-4 items-center border-b border-putihAbu py-3 mb-3">
+                                    <i class="fa-solid fa-circle-check text-yellow-500 text-[20px]"></i>
+                                    <p class="font-medium capitalize">dekorasi</p>
+                                </div>
+                                <div class="flex gap-4 items-center border-b border-putihAbu py-3 mb-3">
+                                    <i class="fa-solid fa-circle-check text-yellow-500 text-[20px]"></i>
+                                    <p class="font-medium capitalize">sound sistem</p>
+                                </div>
+                                <div class="flex gap-4 items-center border-b border-putihAbu py-3 mb-3">
+                                    <i class="fa-solid fa-circle-check text-yellow-500 text-[20px]"></i>
+                                    <p class="font-medium capitalize">chatering</p>
+                                </div>
+                                <div class="flex gap-4 items-center border-b border-putihAbu py-3 mb-3">
+                                    <i class="fa-solid fa-circle-check text-yellow-500 text-[20px]"></i>
+                                    <p class="font-medium capitalize">Tenda Tambahan</p>
+                                </div>
+                                <div class="flex gap-4 items-center border-b border-putihAbu py-3">
+                                    <i class="fa-solid fa-circle-check text-yellow-500 text-[20px]"></i>
+                                    <p class="font-medium capitalize">Snack</p>
+                                </div>
+                            </div>
+
+                            <a href="" class="py-3 bg-putihAbu text-ungu rounded-full w-full block text-center capitalize mb-4 font-semibold border hover:border-ungu hover:bg-white hover:text-ungu transition-all duration-500
+                            ">Pesan Paket 2</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
+
+
+    <footer>
+        <div class="w-full bg-footer pt-20 pb-12 bg-orange mt-36">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <!-- content kiri -->
+                    <div class="md:w-1/2 mb-12 md:mb-0 text-center md:text-left">
+                        <div class="mb-6 ">
+                            <img src="../public/logo2.svg" alt="" class="w-[110px] md:w-[140px] mx-auto md:mx-0">
+                        </div>
+                        <p class="text-sm text-biru max-w-xs leading-relaxed">Gedung serbaguna Multi Hall Event Larantuka tempat mengadakan berbagai kegiatan seperti pertemuan, pesta pernikahan Dll.</p>
+                    </div>
+                    <!-- content kanan -->
+                    <div class=" md:w-1/2 flex flex-col justify-end items-end">
+                        <h2 class="font-bold text-xl mb-4 capitalize text-center md:text-right">stay update to our newsletter</h2>
+                        <div class="">
+                            <input class="w-full md:w-[250px] rounded-md py-3 px-4 text-hitam outline-none text-sm border border-orange mb-2 md:mb-0" type="email" placeholder="enter your email address ">
+
+                            <button type="submit" class="py-3 px-9 font-bold rounded-md border border-ungu hover:bg-white hover:border-ungu hover:text-ungu transition-all duration-500 capitalize bg-ungu text-white text-sm w-full md:w-[150px]">subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- content bawah -->
+                <div class="py-4 px-8 bg-ungu mt-12 rounded-md flex flex-col md:flex-row items-center w-full  md:h-[60px] justify-between">
+
+                    <h1 class="text-white text-sm font-normal mb-6 text-center md:text-left md:mb-0">Dibuat Oleh <span class="font-bold hover:text-hijau cursor-pointer  md:mb-0"> Gedung serbaguna Multi Hall Event Larantuka. @2024</span></h1>
+
+                    <!-- sosial media -->
+                    <div class="flex gap-2">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-white"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-white"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-white"><title>YouTube Music</title><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm0 19.104c-3.924 0-7.104-3.18-7.104-7.104S8.076 4.896 12 4.896s7.104 3.18 7.104 7.104-3.18 7.104-7.104 7.104zm0-13.332c-3.432 0-6.228 2.796-6.228 6.228S8.568 18.228 12 18.228s6.228-2.796 6.228-6.228S15.432 5.772 12 5.772zM9.684 15.54V8.46L15.816 12l-6.132 3.54z"/></svg>
+
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-white"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../src/main.js"></script>
 </body>
 
 </html>
