@@ -21,7 +21,7 @@
 <body class="font-primary tracking-wider text-biru">
 
     <!-- navbar -->
-    <header class="w-full py-6 ">
+    <header id="headerNav" class="w-full py-6 ">
         <div class="container mx-auto px-4">
             <nav class="flex justify-between items-center ">
                 <!-- logo -->
@@ -39,7 +39,10 @@
                 </div>
                 <!-- login register -->
                 <div class="hidden md:flex gap-3 items-center">
-                    <p class="font-medium text-slate-800">Syahrul saleh</p>
+                    <div class="">
+                        <p class="font-medium text-slate-800">Syahrul saleh</p>
+                        <p class="text-xs text-green-500 capitalize text-center">pengelola</p>
+                    </div>
                     <div class="w-[45px] h-[45px] rounded-full overflow-hidden">
                         <img src="../public/orng.jpg" alt="" class="w-full h-full object-cover">
                     </div>
@@ -82,14 +85,9 @@
         </div>
 
         <div class="container my-20 mx-auto px-4">
-            <div class="text-center">
-                <i class="fa-solid fa-circle-check text-hijau text-[70px] mb-4"></i>
-                <h1 class="font-semibold text-xl md:text-3xl capitalize mb-2">Sewa Gedung Berhasil di daftar</h1>
-                <p class="text-slate-500 text-sm md:text-base mb-12">Silahkan Klik Tombol DIbawah untuk melanjutkan pembayaran</p>
-
-                <!-- tombol -->
-                <a href="../src/details-pesanan.html" class="py-3 bg-ungu text-white rounded-full w-full md:w-64 block text-center capitalize mb-4 font-semibold border hover:border-ungu hover:bg-white hover:text-ungu transition-all duration-500 mx-auto 
-                ">Pembayaran <i class="fa-solid fa-caret-right"></i></a>
+            <div class="text-center py-3 px-6 rounded-full w-full border border-slate-800 text-lg capitalize font-semibold">
+                <h1 class="mb-2">Menunggu proses pembuatan jadwal</h1>
+                <p class="text-sm text-slate-500 font-normal">silahkan refresh halaman ini beberapa menit kemudian</p>
             </div>
         </div>
     </main>
